@@ -1,4 +1,4 @@
-# CMS-Style Blog Site
+Tech Blog 
 
 ## Description
 This project is a CMS-style blog site where users can create an account, log in, write blog posts, comment on posts, and manage their own content. It includes a homepage displaying all existing blog posts and a user-specific dashboard for managing personal posts.
