@@ -49,11 +49,3 @@ This project is a CMS-style blog site where users can create an account, log in,
 2. Install dependencies with `npm install`.
 3. Configure environment variables for database and session handling.
 4. Run the application with `npm start`.
-
-## Technologies
-- Node.js
-- Express.js
-- Handlebars.js (or other templating engine)
-- Sequelize (MySQL/PostgreSQL database)
-- bcrypt (password hashing)
-- dotenv (environment variables)
