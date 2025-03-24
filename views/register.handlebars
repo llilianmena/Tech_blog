@@ -1,0 +1,16 @@
+<!-- views/register.handlebars -->
+{{!-- {{#extend "layouts/main"}} --}}
+  {{!-- {{#block "body"}} --}}
+    <h1>Register</h1>
+    <form action="/auth/register" method="POST">
+      <label for="username">Username</label>
+      <input type="text" name="username" required>
+      
+      <label for="password">Password</label>
+      <input type="password" name="password" required>
+      
+      <button type="submit">Register</button>
+    </form>
+    <p>Already have an account? <a href="/login">Login here</a></p>
+  {{!-- {{/block}} --}}
+{{!-- {{/extend}} --}}

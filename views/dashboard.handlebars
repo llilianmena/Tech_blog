@@ -1,0 +1,19 @@
+<!-- views/dashboard.handlebars -->
+{{!-- {{#extend "layouts/main"}}
+  {{#block "body"}} --}}
+    <h1>Dashboard</h1>
+    <h2>Your Posts</h2>
+    <ul>
+      {{#each posts}}
+        <li>
+          <a href="/post/{{this.id}}">{{this.title}}</a> - 
+          <a href="/post/{{this.id}}/edit">Edit</a> | 
+          <a href="/post/{{this.id}}/delete">Delete</a>
+        </li>
+      {{else}}
+        <p>You haven't created any posts yet.</p>
+      {{/each}}
+    </ul>
+    <a href="/post/create">Create a New Post</a>
+  {{!-- {{/block}}
+{{/extend}} --}}

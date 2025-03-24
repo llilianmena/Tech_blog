@@ -1,0 +1,18 @@
+<h1>Welcome to the CMS Blog</h1>
+<h2>All Posts</h2>
+<ul>
+    {{#if posts.length}}
+    {{#each posts}}
+        <li>
+        <p> posted by {{this.User.dataValues.username}} at {{this.createdAt}}
+        <a href="/post/{{this.id}}">
+            <h2>{{this.title}}</h2>
+        </a>
+            <p>{{this.content}}</p>  <!-- If content exists, render it --> 
+        </li>
+        <div class="divider"></div>
+    {{/each}}
+    {{else}}
+    <p>No posts available.</p>  <!-- If there are no posts, show a message -->
+    {{/if}}
+</ul>
